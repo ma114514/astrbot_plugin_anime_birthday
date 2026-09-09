@@ -1,0 +1,71 @@
+{
+  "send_hour": {
+    "description": "每日推送时间 - 小时（0-23，北京时间）",
+    "type": "int",
+    "default": 8,
+    "hint": "每天到达该时间后向所有订阅会话推送当日过生日的角色"
+  },
+  "send_minute": {
+    "description": "每日推送时间 - 分钟（0-59）",
+    "type": "int",
+    "default": 0
+  },
+  "max_characters": {
+    "description": "单个分组最多展示的角色数量",
+    "type": "int",
+    "default": 30,
+    "hint": "范围 1-200，超出显示总数；合并转发另受 max_forward_characters 限制"
+  },
+  "only_with_origin": {
+    "description": "排除无法识别出处的角色",
+    "type": "bool",
+    "default": true
+  },
+  "use_forward": {
+    "description": "角色较多时使用合并转发消息",
+    "type": "bool",
+    "default": false,
+    "hint": "仅 QQ(aiocqhttp) 平台支持合并转发"
+  },
+  "admin_only": {
+    "description": "仅管理员可执行订阅/退订/测试等管理指令",
+    "type": "bool",
+    "default": true
+  },
+  "birthday_cache_days": {
+    "description": "生日缓存有效天数",
+    "type": "int",
+    "default": 30,
+    "hint": "范围 1-3650，过期后按需更新；更新失败保留旧数据"
+  },
+  "work_cache_days": {
+    "description": "作品类型缓存有效天数",
+    "type": "int",
+    "default": 180,
+    "hint": "范围 1-3650，减少重复抓取相同作品页面"
+  },
+  "memory_cache_days": {
+    "description": "内存保留的日期数量",
+    "type": "int",
+    "default": 8,
+    "hint": "范围 1-31，其他日期保留在本地数据库，按需读取"
+  },
+  "request_interval_ms": {
+    "description": "网络请求最小间隔（毫秒）",
+    "type": "int",
+    "default": 500,
+    "hint": "范围 500-10000，全局限速，最多同时请求一个页面"
+  },
+  "request_timeout": {
+    "description": "单次网络请求超时（秒）",
+    "type": "int",
+    "default": 20,
+    "hint": "范围 5-120，临时网络错误最多重试两次"
+  },
+  "max_forward_characters": {
+    "description": "合并转发最多展示的角色数",
+    "type": "int",
+    "default": 100,
+    "hint": "范围 1-200，限制节点数量及消息内存占用"
+  }
+}

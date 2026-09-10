@@ -58,7 +58,7 @@ SECTIONS = (
     PLUGIN_NAME,
     "ma114514",
     "本地缓存角色生日，按类型订阅每日推送",
-    "2.0.0",
+    "1.0.0",
     "https://github.com/ma114514/astrbot_plugin_anime_birthday",
 )
 class AnimeBirthdayPlugin(Star):

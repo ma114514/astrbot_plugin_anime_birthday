@@ -1,6 +1,6 @@
 name: astrbot_plugin_anime_birthday
 desc: 本地缓存动漫与游戏角色生日，按 Galgame、游戏、番剧订阅每日推送
 help: /今日生日；/生日查询 3月8日；/生日订阅 gal|游戏|番剧|全部；/生日缓存；/生日刷新
-version: v2.0.0
+version: v1.0.0
 author: ma114514
 repo: https://github.com/ma114514/astrbot_plugin_anime_birthday
